@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🌤️ Weather Dashboard</h1>
+      <div class="search-box">
+        <input type="text" id="cityInput" placeholder="Enter city name...">
+        <button id="searchBtn">Search</button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Current Weather -->
+      <section class="current-weather">
+        <h2 id="cityName">--</h2>
+        <div class="weather-info">
+          <img id="weatherIcon" alt="Weather Icon">
+          <div>
+            <p id="temperature">--°C</p>
+            <p id="condition">--</p>
+          </div>
+        </div>
+        <p id="updatedTime">Updated: --</p>
+        <div class="extra-info">
+          <p id="feelsLike">Feels like: --</p>
+          <p id="humidity">Humidity: --%</p>
+          <p id="wind">Wind: --</p>
+          <p id="pressure">Pressure: --</p>
+          <p id="visibility">Visibility: --</p>
+          <p id="sunrise">Sunrise: --</p>
+          <p id="sunset">Sunset: --</p>
+        </div>
+      </section>
+
+      <!-- Forecast -->
+      <section class="forecast">
+        <h2>5-Day Forecast</h2>
+        <div id="forecastRow" class="forecast-row"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
