@@ -96,6 +96,7 @@ header h1 {
 }
 .forecast-row {
   display: flex;
+  justify-content: center;
   gap: 15px;
   overflow-x: auto;
   padding: 10px 0;
@@ -114,3 +115,4 @@ header h1 {
 .f-card .day {
   font-weight: bold;
 }
+
